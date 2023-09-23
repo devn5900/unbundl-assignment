@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Source+Code+Pro:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider_container{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
+
+}
+.slider{
+    display: flex;
+    width: 100%;
+    animation: move 16s infinite;
+    
+}
+.slider div{
+    width: 100%;
+}
+.slider div img{
+
+    width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    object-fit: contain;
+}
+.slider::-webkit-scrollbar{
+    width: 0;
+    display: none;
+}
+
+.slider_link{
+    display: flex;
+    gap:0.5rem;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 5%;
+}
+.slider_link a{
+    width: 8px;
+    height: 8px;
+    background: rgb(204, 195, 195);
+    border-radius: 50%;
+}
+.slider_link a:hover{
+    background: white;
+}
+.slider_text{
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    text-align: center;
+    color: white;
+}
+.slider_text h2{
+    font-size: 2.5rem;
+    font-weight: 500 ;
+    margin: 0;
+    padding: 0.5rem;
+    font-family: "GTSuperDisplay-Regular" !important;
+}
+.slider_text p{
+    letter-spacing: -0.02rem;
+    font-family: ApercuPro-Light,'Source Code Pro',Helvetica,sans-serif;
+    font-size: 16px;
+}
+.slider_text button{
+    margin: 2.5rem 0;
+    text-transform: uppercase;
+    background-color: black;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 1rem 3rem;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.offer{
+    background-color: #98A88D;
+    text-align: center;
+    color: white;
+    font-size: 0.78rem;
+    font-family: ApercuPro-Light,Source Sans Pro,Helvetica,sans-serif;
+    padding: 0.72rem 0;
+}
+.nav{
+    background-color: transparent;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    margin: auto;
+    z-index: 10;
+}
+.nav .navChild{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.nav_link1{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.nav_link1 a,.nav_link2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap:0.3rem
+}
+
+.nav_link1 a i{
+    font-weight: thin;
+    font-size: 0.8rem;
+}
+
+.nav .nav_link2{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:3rem;
+}
+.nav_link2 span i{
+    font-weight: thin;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.slider2{
+    width: 90%;
+    margin: auto;
+}
+.sliText{
+    display: flex ;
+    margin-top: 3rem;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+}
+.sliText h2{
+    font-size: 1.1rem;
+    font-family: ApercuPro-Bold,Source Sans Pro,Helvetica,sans-serif;
+}
+.sliText h1{
+    font-size: 2.5rem;
+    font-family: GTSuperDisplay-Regular!important;
+}
+.boxSection{
+    width: 70%;
+    margin: auto;
+    padding: 2rem 0;
+}
+.boxWidth{
+    width: 80% !important;
+}
+.box{
+    display: flex;
+    gap:5rem;
+}
+.boxleft,.box_bg>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:1rem;
+
+}
+.boxleft>div h3,.box_bg>div>h3,.experts_text>h3{
+    font-family: ApercuPro-Bold,Source Sans Pro,Helvetica,sans-serif;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 13px;
+}
+.boxleft>div h1,.box_bg>div>h1,.experts_text>h1,.about>h1{
+    line-height: 3rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: GTSuperDisplay-Regular!important;
+    -webkit-font-smoothing: antialiased;
+}
+.boxleft>div p,.box_bg>div>p,.experts_text>p,.about p{
+    line-height: 1.5rem;
+    font-family: ApercuPro-Light,'Montserrat',Helvetica,;
+    line-height: 26px;
+    text-align: left;
+    font-weight: thin;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+.boxleft>div button,.experts_text>div button{
+    font-size: 13px;
+    font-family: ApercuPro-Bold,Source Sans Pro,Helvetica,sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 2px;
+font-weight: 700;
+margin-top: 2rem;
+    text-transform: uppercase;
+    
+    background-color: #face93;
+    border: none;
+    padding: 1rem 2.5rem;
+}
+
+.reverse_box{
+    flex-direction: row-reverse;
+}
+.boxImg{
+    display: flex;
+    justify-content: center;
+} 
+.box_bg>div{
+    background-color: #f0ecec;
+    padding: 5rem 7rem;
+    width: 56%;
+}
+
+.experts{
+    background-color:#F9F6EF ;
+   
+}
+.experts>div{
+    width: 80%;
+    margin: auto;
+    display:  flex;
+    gap: 3rem;
+}
+.experts>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_container{
+    width: 80%;
+    padding: 10rem 0;
+    margin: auto;
+}
+.about{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.about>h1{
+    font-family: GTSuperDisplay-Regular;
+}
+.about>p{
+    font-family: ApercuPro-Light, "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+.about span{
+    font-size: 0.8rem; 
+    font-weight: 700;
+}
+
+.journal{
+    background-color: #F9F6EF;
+    padding-top: 2rem;
+}
+.journal>div>h1{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+
+.journal_items{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem
+}
+.journal_items>div>div>img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+.journal_items>div>span>a{
+    font-family: ApercuPro-Light;
+    box-sizing: border-box;
+    color: #000!important;
+    text-transform: uppercase!important;
+    font-weight: 700;
+    font-size: 10px!important;
+    letter-spacing: -.04px;
+    text-decoration: underline;
+}
+.journal_items>div>span{
+    display: flex;
+    padding: 0.2rem;
+    align-items: center;
+    gap:1rem
+}
+.journal_items>div>h1{
+    font-family:GTSuperDisplay-Regular!important;
+    font-size: 1.2rem ;
+    line-height: 3rem;
+    padding: 0.5rem 0;
+    -webkit-font-smoothing: antialiased;
+}
+.journal_items>div>p{
+    font-family: ApercuPro-Light,Source Sans Pro,Helvetica,sans-serif;
+    line-height: 1.8rem;
+    text-align: left;
+    font-weight: thin;
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    letter-spacing: 0;
+    padding: 1.3rem 0;
+}
+.journal_items>div>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    color: #212529;
+    border-bottom: 2px solid;
+    border-color: #D79381;
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-100%);
+    }
+    65%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
