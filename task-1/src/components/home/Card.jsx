@@ -35,7 +35,7 @@ const Card = ({id,image,name,price,quantity}) => {
         <img src={image} className=' hover:scale-105 transition-all duration-700 aspect-square object-cover' alt="" />
         </div>
         <div className=' text-md py-3 font-light flex flex-col items-center justify-center '>
-            <p className=' hover:border-b-[1px] hover:border-black my-1' >{String(name).split(" ").splice(0,5).join(" ")}</p>
+            <p className=' hover:border-b-[1px] hover:border-black my-1' >{String(name).split(" ").splice(0,4).join(" ")}</p>
         <p>₹ {price}</p>
         </div>
        

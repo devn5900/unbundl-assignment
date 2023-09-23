@@ -17,7 +17,7 @@ const Cart = () => {
         <div className='w-[85%] m-auto'>
            {
             cart && cart.length>0?<>
-             <div className='flex items-center justify-between text-gray-700 py-3'>
+             <div className='flex xs:invisible sm:visible items-center justify-between text-gray-700 py-3'>
                 <span>Products</span>
                 <span>Quantity</span>
                 <span>Total</span>
@@ -29,7 +29,7 @@ const Cart = () => {
                     })
                 }
             </div>
-            <div className=' py-5 flex items-center justify-between'>
+            <div className=' py-5 flex sm:flex-row  xs:flex-col-reverse items-center justify-between'>
                 <div className='text-md text-gray-700'>
                     <p>Order special instructions</p>
                     <textarea className='border-2 my-2 rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl 
