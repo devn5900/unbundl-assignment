@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Cart</title>
-    <link rel="stylesheet" href="navbar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
     <nav>
-        <div class="navbar">
-            <div >
-                <i class="fa fa-thin fa-bars"></i>
-                <i class="fa fa-light fa-magnifying-glass"></i>
-            </div>
-            <div>
-                <a href="/"><img src="https://drinkjimmys.com/cdn/shop/files/Logo-3_1.png?v=1662467080&width=165" alt="" ></a>
-            </div>
-            <div>
-                <span>
-                    <i class="fa fa-thin fa-user"></i>
-                </span>
-                <span class="to" id="redirectCart" >
-                    <i class="fa fa-light fa-cart-shopping"></i>
-                    <div id="cartTotal">0</div>
-                </span>
-            </div>
+      <div class="navbar">
+        <div>
+          <i class="fa fa-thin fa-bars"></i>
+          <i class="fa fa-light fa-magnifying-glass"></i>
         </div>
+        <div>
+          <a href="/task-1/index.html"
+            ><img
+              src="https://drinkjimmys.com/cdn/shop/files/Logo-3_1.png?v=1662467080&width=165"
+              alt=""
+          /></a>
+        </div>
+        <div>
+          <span>
+            <i class="fa fa-thin fa-user"></i>
+          </span>
+          <span class="to" id="redirectCart">
+            <i class="fa fa-light fa-cart-shopping"></i>
+            <div id="cartTotal">0</div>
+          </span>
+        </div>
+      </div>
     </nav>
-</body>
+    <section class="head">
+      <h1>Your Cart <span id="cartTotalPrice"></span></h1>
+      <a href="#">Continue Shopping</a>
+    </section>
+    <section >
+      <div class="prodContainer" id="dispCart">
+       
+      </div>
+    </section>
+  </body>
+  <script src="./cart.js"></script>
 </html>

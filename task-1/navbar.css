@@ -25,6 +25,9 @@ body{
 .to{
     position: relative;
 }
+#redirectCart{
+    cursor: pointer;
+}
 #cartTotal{
     position: absolute;
     top: -10px;

@@ -1,0 +1,115 @@
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:  2rem;
+}
+.head h1{
+    font-size: 2.2rem;
+    font-weight:  bold;
+    font-family: 'Poppins' 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head a{
+    text-decoration: none;
+}
+
+.prodContainer{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.prodContainer div>div{
+    overflow: hidden;
+    border-radius: 8%;
+}
+.prodContainer div div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    gap: 0.4rem;
+}
+.prodContainer div button{
+    width: 100%;
+    padding: 0.7rem 0;
+    border-radius: 20px;
+    border: none;
+    background: #08255F ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.prodContainer div button:hover{
+    background: #0a3280 ;
+}
+.prodContainer div img{
+    aspect-ratio: 4/3;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8%;
+}
+.prodContainer div img:hover{
+    scale: 1.04;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+     .prodContainer{
+        grid-template-columns: repeat(4,1fr);
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+     .prodContainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+     .prodContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+     .prodContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+  
+  
+
+.cartBtn{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.cartBtn span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+}
+.cartBtn button{
+    width: 2rem !important;
+    height: 2rem !important;
+    border-radius: 20px ;
+    border: none;
+    background: #08255F ;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
