@@ -1,0 +1,128 @@
+
+.offer div{
+    background: #08255F;
+    padding: 0.8rem 0;
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.products{
+    padding: 1.5rem 0;
+}
+.products h2{
+    text-align: center;
+    font-family: 'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tools{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    margin: 2rem 3rem;
+}
+
+.tools div:first-child label{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+.tools div:first-child select{
+    padding: 0.5rem 1.5rem;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    border: none;
+}
+.products .prodContainer{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.prodContainer div>div{
+    overflow: hidden;
+    border-radius: 8%;
+}
+.prodContainer div div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    gap: 0.4rem;
+}
+.prodContainer div button{
+    width: 100%;
+    padding: 0.7rem 0;
+    border-radius: 20px;
+    border: none;
+    background: #08255F ;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.prodContainer div button:hover{
+    background: #0a3280 ;
+}
+.prodContainer div img{
+    aspect-ratio: 4/3;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8%;
+}
+.prodContainer div img:hover{
+    scale: 1.04;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+.cartBtn{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.cartBtn button{
+    width: auto !important;
+    padding: 0.5rem 1rem !important ;
+    border-radius: 20px ;
+    border: none;
+    background: #08255F ;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .products  .prodContainer{
+        grid-template-columns: repeat(4,1fr);
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .products  .prodContainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .products  .prodContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .products  .prodContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+  
+  
