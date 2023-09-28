@@ -195,5 +195,5 @@ const incrementCartQuantity=(id)=>{
 
 
   document.getElementById("redirectCart").addEventListener("click",()=>{
-    window.location.href="/task-1/cart.html"
+    window.location.href="/cart.html"
   })
